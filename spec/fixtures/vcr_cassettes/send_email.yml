@@ -1,0 +1,45 @@
+--- 
+- !ruby/struct:VCR::HTTPInteraction 
+  request: !ruby/struct:VCR::Request 
+    method: :post
+    uri: http://us1.sts.mailchimp.com:80/1.0/SendEmail
+    body: 
+    headers: 
+      user-agent: 
+      - Typhoeus - http://github.com/dbalatero/typhoeus/tree/master
+  response: !ruby/struct:VCR::Response 
+    status: !ruby/struct:VCR::ResponseStatus 
+      code: 200
+      message: Continue
+    headers: 
+      x-powered-by: 
+      - PHP/5.2.16
+      content-type: 
+      - application/json; charset=utf-8
+      date: 
+      - Sun, 13 Feb 2011 05:07:29 GMT
+      server: 
+      - Apache/2.2.3 (Red Hat)
+      content-length: 
+      - "110"
+      content-encoding: 
+      - gzip
+      vary: 
+      - Accept-Encoding
+    body: "{\"message_id\":\"2819e141-372f-11e0-bd4e-4162672e6bcb\",\"aws_code\":null,\"msg\":null,\"status\":\"sent\"}"
+    http_version: "1.1"
+- !ruby/struct:VCR::HTTPInteraction 
+  request: !ruby/struct:VCR::Request 
+    method: :post
+    uri: http://test.sts.mailchimp.com:80/1.0/SendEmail
+    body: 
+    headers: 
+      user-agent: 
+      - Typhoeus - http://github.com/dbalatero/typhoeus/tree/master
+  response: !ruby/struct:VCR::Response 
+    status: !ruby/struct:VCR::ResponseStatus 
+      code: 0
+      message: 
+    headers: 
+    body: 
+    http_version: 

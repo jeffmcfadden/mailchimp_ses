@@ -7,6 +7,7 @@ GEM
       bundler (~> 1.0.0)
       git (>= 1.2.5)
       rake
+    json (1.5.1)
     mime-types (1.16)
     monster_mash (0.2.0)
       typhoeus (>= 0.2.0)
@@ -22,6 +23,7 @@ GEM
     rspec-mocks (2.3.0)
     typhoeus (0.2.1)
       mime-types
+    vcr (1.4.0)
 
 PLATFORMS
   ruby
@@ -29,6 +31,8 @@ PLATFORMS
 DEPENDENCIES
   bundler (~> 1.0.0)
   jeweler (~> 1.5.2)
+  json
   monster_mash
   rcov
   rspec (~> 2.3.0)
+  vcr
