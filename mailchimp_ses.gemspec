@@ -27,6 +27,7 @@ Gem::Specification.new do |s|
     "Rakefile",
     "VERSION",
     "lib/mailchimp_ses.rb",
+    "mailchimp_ses.gemspec",
     "spec/fixtures/vcr_cassettes/send_email.yml",
     "spec/mailchimp_ses_spec.rb",
     "spec/spec_helper.rb"
