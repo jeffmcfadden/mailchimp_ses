@@ -43,3 +43,4 @@ pkg
 README.md.html
 .*.sw?
 test.rb
+server.rb
