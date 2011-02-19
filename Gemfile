@@ -1,6 +1,6 @@
 source "http://rubygems.org"
 
-gem 'monster_mash', '>= 0.2.1'
+gem 'monster_mash', '>= 0.2.2'
 gem 'json'
 
 # Add dependencies to develop your gem here.

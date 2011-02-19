@@ -27,7 +27,7 @@ Jeweler::Tasks.new do |gem|
   gem.add_development_dependency 'rspec', '~> 2.3.0'
   gem.add_development_dependency 'jeweler', '~> 1.5.2'
   gem.add_development_dependency 'vcr'
-  gem.add_runtime_dependency 'monster_mash', '>= 0.2.0'
+  gem.add_runtime_dependency 'monster_mash', '>= 0.2.2'
   gem.add_runtime_dependency 'json'
 end
 Jeweler::RubygemsDotOrgTasks.new
