@@ -40,6 +40,11 @@ class MailchimpSes < MonsterMash::Base
     if options[:message].has_key?(:to_name) && !options[:message][:to_name].empty?
       message[:to_name] = convert_to_hash_array(options[:message][:to_name])
     end
+    
+    # Pull optional reply_to.
+    if options[:message].has_key?(:reply_to) && !options[:message][:reply_to].blank?
+      message[:reply_to] = convert_to_hash_array(options[:message][:reply_to])
+    end
 
     # Check on to_email and to_name length.
     if message.has_key?(:to_email) && message.has_key?(:to_name) &&

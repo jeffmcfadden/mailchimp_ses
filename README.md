@@ -27,6 +27,7 @@ Usage example:
         :text => 'Welcome to our website.',
         :from_name => 'David Balatero',
         :from_email => 'david@balatero.com',
+        :reply_to => 'david@alias.com',
         :to_email => ['john@smith.com'],
         :to_name => ['John Smith']
       },
